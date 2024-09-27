@@ -22,7 +22,7 @@ p {
     padding: 0;
 }
 main {
-    width: 800px;
+    max-width: 800px;
 }
 aside {
     width: 400px;
