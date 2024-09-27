@@ -12,11 +12,37 @@ h1 {
 }
 img {
     width: 150px;
+    margin: 10px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 10px;
+    padding: 0;
+}
+main {
+    width: 800px;
+}
+aside {
+    width: 400px;
+    margin: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(89, 131, 128);
+    color: rgb(255, 255, 255);
+}
+aside img {
+    width: 200px;
+    height: auto;
+}
+main img {
+    width: 200px;
+    height: auto;
+}
+footer {
+    margin-top: 10px;
+    border-top: 2px solid #ff88ff;
+    text-align: center;
 }
