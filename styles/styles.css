@@ -1,5 +1,9 @@
+:root {
+    --background-color: rgb(89, 131, 128);
+    --border: 1px solid rgba(0, 0, 0, 0.2)
+}
 nav {
-    background-color: steelblue;
+    background-color: var(--background-color);
     padding: 10px;
 }
 /* here is a comment */
@@ -9,13 +13,13 @@ nav a{
     padding: 20px;
 }
 h1 {
-    color: steelblue;
+    color: var(--background-color);
 }
 img {
     width: 150px;
     margin: 10px;
     height: auto;
-    border: 1px solid steelblue;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -28,11 +32,11 @@ main {
 aside {
     width: 400px;
     margin: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: var(--border);
     border-radius: 10px;
     padding: 5px;
-    background-color: rgb(89, 131, 128);
-    color: rgb(255, 255, 255);
+    background-color: var(--background-color);
+    color: white;
 }
 aside img {
     width: 200px;
@@ -44,6 +48,6 @@ main img {
 }
 footer {
     margin-top: 10px;
-    border-top: 2px solid #ff88ff;
+    border-top: 2px solid rgb(89, 131, 128);
     text-align: center;
 }
