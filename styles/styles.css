@@ -2,6 +2,11 @@
     --background-color: rgb(89, 131, 128);
     --border: 1px solid rgba(0, 0, 0, 0.2)
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {
     background-color: var(--background-color);
     padding: 10px;
@@ -31,18 +36,22 @@ main {
 }
 aside {
     width: 400px;
-    margin: 10px;
-    border: var(--border);
     border-radius: 10px;
-    padding: 5px;
-    background-color: var(--background-color);
-    color: white;
+    position: relative;
+}
+aside h2 {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    color: black;
 }
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
+    text-align: center;
 }
 main img {
+    float: right;
     width: 200px;
     height: auto;
 }
@@ -50,4 +59,12 @@ footer {
     margin-top: 10px;
     border-top: 2px solid rgb(89, 131, 128);
     text-align: center;
+}
+/* class selectors */
+.box {
+    margin: 1rem;
+    border: var(--border);
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: white;
 }
