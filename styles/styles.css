@@ -60,7 +60,7 @@ footer {
     border-top: 2px solid rgb(89, 131, 128);
     text-align: center;
 }
-/* class selectors */
+/* Class Selectors */
 .box {
     margin: 1rem;
     border: var(--border);
