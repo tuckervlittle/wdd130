@@ -3,7 +3,7 @@
     --secondary-color: #B0C9E1;
     --accent-color1: #71563d;
     --accent-color2: #F5EEE6;
-    max-width: 750px;
+    /* max-width: flex; */
 }
 /* Fonts */
 .anton-regular {
@@ -30,9 +30,6 @@
 body {
     background-color: var(--primary-color);
 }
-header nav {
-    background-color: #71563ddd;
-}
 nav a {
     font-family: "Anton", sans-serif;
     font-weight: 400;
@@ -40,7 +37,7 @@ nav a {
     font-size: x-large;
     text-decoration: none;
     color: var(--accent-color2);
-    margin: 50px;
+    margin: 25px;
 }
 h2 {
     font-family: "Anton", sans-serif;
@@ -54,15 +51,78 @@ p {
     font-style: normal;
     margin: 20px;
     padding: 10px;
-    border-radius: 5px;
 }
+/* Flex and Grid */
+header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--accent-color1);
+    margin: 10px 0px;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+main section:first-of-type h2 {
+    grid-column: 1/4;
+}
+main section:first-of-type img {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+main section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    border-radius: 10px;
+    padding-left: 25px;
+}
+main section h2 {
+    grid-column: 1/6
+}
+main section:last-of-type {
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+main section:last-of-type img {
+    max-width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+footer p {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Classes */
 .hero {
     position: relative;
 }
 .hero img {
     display: block;
     width: 100%;
-    height:auto
+    height:auto;
+    border-radius: 10px;
 }
 .hero h1 {
     position: absolute;
@@ -83,6 +143,7 @@ p {
     left: 10%;
     right: 20%;
     background-color: #71563d8a;
+    border-radius: 10px;
 }
 .hero article p {
     padding-bottom: 50px;
@@ -98,5 +159,5 @@ p {
     float: right;
 }
 .sociallinks a img {
-    width: 3rem;
+    width: 2rem;
 }
