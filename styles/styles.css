@@ -1,6 +1,7 @@
 :root {
     --background-color: rgb(89, 131, 128);
-    --border: 1px solid rgba(0, 0, 0, 0.2)
+    --border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: large;
 }
 * {
     margin: 0;
@@ -10,6 +11,8 @@
 nav {
     background-color: var(--background-color);
     padding: 10px;
+    border-radius: 10px;
+    margin: 1rem;
 }
 /* here is a comment */
 nav a{
@@ -19,6 +22,7 @@ nav a{
 }
 h1 {
     color: var(--background-color);
+    padding: 1rem;
 }
 img {
     width: 150px;
@@ -29,31 +33,36 @@ img {
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 0;
+    margin-left: 1rem;
 }
 main {
     max-width: 800px;
 }
+main img {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin: 0 0 1rem 1rem;
+}
+ul {
+    border-radius: 10px;
+}
 aside {
     width: 400px;
     border-radius: 10px;
+    text-align: center;
     position: relative;
 }
 aside h2 {
     position: absolute;
     top: 35px;
-    left: 100px;
+    left: 120px;
     color: black;
 }
 aside img {
     width: 300px;
     height: auto;
     text-align: center;
-}
-main img {
-    float: right;
-    width: 200px;
-    height: auto;
 }
 footer {
     margin-top: 10px;
@@ -67,4 +76,7 @@ footer {
     padding: 1rem;
     background-color: var(--background-color);
     color: white;
+}
+.indent {
+    padding-left: 2rem;
 }
