@@ -266,6 +266,10 @@ input[type="checkbox"] {
     height: 20px;
     vertical-align: bottom;
 }
+input[type="radio"] {
+    width: 20px;
+    vertical-align: bottom;
+}
 button {
     margin: 1rem 23rem;
     background-color: var(--primary-color);
